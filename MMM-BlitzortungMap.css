@@ -1,0 +1,32 @@
+/* Magic Mirror
+ * Module: MMM-P1
+ *
+ * By Jeroen van Vooren (Iotricity)
+ * ISC Licensed.
+ */
+
+.blitzContainer {
+    height: 450px;
+    width: 600px;
+	background: transparent;
+	border: none;
+	margin: 0px;
+	position: relative;
+	overflow: hidden;
+	display: block;
+}
+
+.blitzFrame {
+    height: 450px;
+    width: 600px;
+	top: 0px;
+	left: 0px;
+	background: transparent;
+	border: none;
+	margin: 0px;
+	border: 2px solid #006633;
+	border-radius: 20px;
+	position: absolute;
+	display: block;
+}
+

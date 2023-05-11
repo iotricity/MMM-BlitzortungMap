@@ -1,0 +1,8 @@
+{
+  "name": "MMM-BlitzortungMap",
+  "version": "1.0.0",
+  "description": "This module will show data from the Blitzortung lightning detection site.",
+  "main": "MMM-BlitzortungMap.js",
+  "author": "Jeroen van Vooren",
+  "license": "MIT"
+}
