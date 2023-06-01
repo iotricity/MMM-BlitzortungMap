@@ -27,7 +27,7 @@ Module.register("MMM-BlitzortungMap", {
 
 		setInterval(() => {
 			self.updateDom();
-		}, this.config.interval * 60000 * this.config.reloadtime);
+		}, 60000 * this.config.reloadtime);
 	},
 
 	getStyles: function () {
@@ -40,9 +40,10 @@ Module.register("MMM-BlitzortungMap", {
 		var blitzContainer = document.createElement('div');
 		blitzContainer.className = 'blitzContainer';
 
+		// https://map.blitzortung.org/mapexample.html
 		var blitzFrame = document.createElement('iframe');
 		blitzFrame.className = 'blitzFrame';
-		blitzFrame.src = 'https://map.blitzortung.org/index.php?interactive=0&NavigationControl=0&FullScreenControl=0&Cookies=0&InfoDiv=0&MenuButtonDiv=0&ScaleControl=0&LinksCheckboxChecked=1&LinksRangeValue=10&MapStyle=2&MapStyleRangeValue=10&Advertisment=0#3/40/15';
+		blitzFrame.src = 'https://map.blitzortung.org/index.php?interactive=0&NavigationControl=0&FullScreenControl=0&Cookies=0&InfoDiv=0&MenuButtonDiv=0&ScaleControl=0&LinksCheckboxChecked=0&LinksRangeValue=10&MapStyle=' + this.config.mapstyle + '&MapStyleRangeValue=10&Advertisment=0#' + this.config.mapzoom + '/' + this.config.lat + '/' + this.config.lon;
 		blitzContainer.appendChild(blitzFrame);
 
 		return blitzContainer;
